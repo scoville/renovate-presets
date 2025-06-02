@@ -1,0 +1,46 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "enabled": true,
+  "schedule": ["* 9-17 * * 1-5"],
+  "timezone": "Asia/Tokyo",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "rangeStrategy": "widen",
+  "packageRules": [
+    {
+      "matchDepTypes": ["dev", "devDependencies"],
+      "automerge": true,
+      "rangeStrategy": "pin"
+    },
+    {
+      "groupName": "esbuild",
+      "matchPackageNames": ["/esbuild/"]
+    },
+    {
+      "groupName": "ex_aws",
+      "matchPackageNames": ["/ex_aws/"]
+    },
+    {
+      "groupName": "flop",
+      "matchPackageNames": ["/flop/"]
+    },
+    {
+      "groupName": "fun_with_flags",
+      "matchPackageNames": ["/fun_with_flags/"]
+    },
+    {
+      "groupName": "phoenix",
+      "matchPackageNames": ["/phoenix/"]
+    },
+    {
+      "groupName": "postcss",
+      "matchPackageNames": ["/postcss/"]
+    },
+    {
+      "groupName": "stylelint",
+      "matchPackageNames": ["/stylelint/"]
+    }
+  ]
+}
