@@ -25,6 +25,15 @@
       "enabled": false
     },
     {
+      "matchManagers": [
+        "mix"
+      ],
+      "matchUpdateTypes": [
+        "lockFileMaintenance"
+      ],
+      "enabled": false
+    },
+    {
       "matchDepTypes": ["dev", "devDependencies"],
       "automerge": true
     },
