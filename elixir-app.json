@@ -22,10 +22,6 @@
       "enabled": false
     },
     {
-      "matchDepTypes": ["dev", "devDependencies"],
-      "automerge": true
-    },
-    {
       "groupName": "esbuild",
       "matchPackageNames": ["/esbuild/"]
     },

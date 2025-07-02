@@ -12,7 +12,6 @@
   "packageRules": [
     {
       "matchDepTypes": ["dev", "devDependencies"],
-      "automerge": true,
       "rangeStrategy": "pin"
     },
     {
