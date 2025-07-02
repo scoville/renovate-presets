@@ -11,8 +11,8 @@
   "rangeStrategy": "pin",
   "packageRules": [
     {
-      "matchDatasources": [
-        "docker"
+      "matchManagers": [
+        "dockerfile"
       ],
       "matchPackageNames": [
         "/debian/",
