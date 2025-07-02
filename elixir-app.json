@@ -11,22 +11,15 @@
   "rangeStrategy": "pin",
   "packageRules": [
     {
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchPackageNames": [
-        "/debian/",
-        "/elixir/",
-        "/erlang/"
-      ],
-      "matchUpdateTypes": [
-        "pinDigest"
-      ],
+      "matchManagers": ["dockerfile"],
+      "matchPackageNames": ["/debian/", "/elixir/", "/erlang/"],
+      "matchUpdateTypes": ["pinDigest"],
       "enabled": false
     },
     {
-      "matchDepTypes": ["dev", "devDependencies"],
-      "automerge": true
+      "matchManagers": ["mix"],
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "enabled": false
     },
     {
       "groupName": "esbuild",
