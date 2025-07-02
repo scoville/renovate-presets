@@ -11,6 +11,20 @@
   "rangeStrategy": "pin",
   "packageRules": [
     {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "/debian/",
+        "/elixir/",
+        "/erlang/"
+      ],
+      "matchUpdateTypes": [
+        "pinDigest"
+      ],
+      "enabled": false
+    },
+    {
       "matchDepTypes": ["dev", "devDependencies"],
       "automerge": true
     },
