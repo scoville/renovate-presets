@@ -11,26 +11,14 @@
   "rangeStrategy": "pin",
   "packageRules": [
     {
-      "matchManagers": [
-        "dockerfile"
-      ],
-      "matchPackageNames": [
-        "/debian/",
-        "/elixir/",
-        "/erlang/"
-      ],
-      "matchUpdateTypes": [
-        "pinDigest"
-      ],
+      "matchManagers": ["dockerfile"],
+      "matchPackageNames": ["/debian/", "/elixir/", "/erlang/"],
+      "matchUpdateTypes": ["pinDigest"],
       "enabled": false
     },
     {
-      "matchManagers": [
-        "mix"
-      ],
-      "matchUpdateTypes": [
-        "lockFileMaintenance"
-      ],
+      "matchManagers": ["mix"],
+      "matchUpdateTypes": ["lockFileMaintenance"],
       "enabled": false
     },
     {
