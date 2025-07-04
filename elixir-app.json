@@ -17,8 +17,9 @@
     },
     {
       "matchManagers": ["mix"],
-      "matchUpdateTypes": ["lockFileMaintenance"],
-      "enabled": false
+      "lockFileMaintenance": {
+        "enabled": false
+      }
     },
     {
       "groupName": "esbuild",
