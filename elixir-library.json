@@ -5,8 +5,7 @@
   "schedule": ["* 9-17 * * 1-5"],
   "timezone": "Asia/Tokyo",
   "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": ["* 9-17 * * 1-5"]
+    "enabled": true
   },
   "rangeStrategy": "widen",
   "packageRules": [
