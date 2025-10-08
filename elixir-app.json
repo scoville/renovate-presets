@@ -17,7 +17,7 @@
     },
     {
       "matchManagers": ["mix"],
-      "updateLockFiles": false
+      "skipArtifactsUpdate": true
     },
     {
       "groupName": "esbuild",
