@@ -5,7 +5,7 @@
   "schedule": ["* 9-17 * * 1-5"],
   "timezone": "Asia/Tokyo",
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": false
   },
   "rangeStrategy": "pin",
   "packageRules": [
@@ -14,10 +14,6 @@
       "matchPackageNames": ["/debian/", "/elixir/", "/erlang/"],
       "matchUpdateTypes": ["pinDigest"],
       "enabled": false
-    },
-    {
-      "matchManagers": ["mix"],
-      "skipArtifactsUpdate": true
     },
     {
       "groupName": "esbuild",
