@@ -65,6 +65,8 @@ or selectively enable the managers you need.
 
 | Preset name    | Description                        |
 | -------------- | ---------------------------------- |
+| base           | Global defaults for all ecosystems |
+| ci             | Preset for CI workflows            |
 | elixir-app     | Preset for Elixir applications     |
 | elixir-library | Preset for shared Elixir libraries |
 | terraform      | Preset for Terraform repositories  |
