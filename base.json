@@ -4,5 +4,12 @@
   "timezone": "Asia/Tokyo",
   "minimumReleaseAge": "7 days",
   "prCreation": "not-pending",
-  "internalChecksFilter": "strict"
+  "internalChecksFilter": "strict",
+  "packageRules": [
+    {
+      "description": "Override the 3-day npm rule from config:best-practices",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "7 days"
+    }
+  ]
 }
